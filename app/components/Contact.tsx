@@ -15,7 +15,7 @@ const Contact=()=>{
         //checks if inputs were valid length, then makes request to send email via sengrid
         const validForm=handleValidation(name,email,message);
         if(validForm){
-            const res = await fetch("http://localhost:3000/api/sendgrid", {
+            const res = await fetch((process.env.PORTFOLIO_DOMAIN+"/api/sendgrid"), {
                 body: JSON.stringify({
                   email: email,
                   name: name,
