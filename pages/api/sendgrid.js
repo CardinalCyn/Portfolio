@@ -1,12 +1,14 @@
 import sendgrid from "@sendgrid/mail";
 
 sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
+const to=process.env.SENDGRID_TO_EMAIL;
+const from=process.env.SENDGRID_FROM_EMAIL;
 
 const sendEmail=async(req, res)=>{
   try {
     await sendgrid.send({
-      to: "zanabilis@gmail.com",
-      from: "thezanabili@gmail.com",
+      to: to,
+      from: from,
       subject: `Message on page!`,
       html:
       `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

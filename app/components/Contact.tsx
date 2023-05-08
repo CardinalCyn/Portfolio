@@ -43,8 +43,7 @@ const Contact=()=>{
     }
     return (
       <div id="Contact Me" className="text-white text-center mt-20 md:mt-0 pb-10 md:pb-96">
-        {successMessage&&<div className="successMessage">Your contact request was successful!</div>}
-        {failureMessage&&<div className="failureMessage">There was an error in your request, try again later</div>}
+        
         <h2 className="text-bold text-2xl mt-24 mb-10">Contact Me</h2>
         <form onSubmit={handleSubmit}>
             <div className="mb-3 pt-0 md:w-1/3 md:mx-auto">
@@ -61,6 +60,8 @@ const Contact=()=>{
                     Send a message
                 </button>
             </div>
+            {successMessage&&<div className="bg-green-500 text-white rounded-md p-4 mb-4 mt-2 inline-block">Your contact request was successful!</div>}
+            {failureMessage&&<div className="bg-red-500 text-white rounded-md p-4 mb-4 mt-2 inline-block">There was an error in your request, try again later</div>}
         </form>
       </div>
     );
