@@ -17,20 +17,16 @@ const Skills = () => {
   return (
     <div id="Skills" className="pt-20 h-screen">
       <h2 className="text-2xl font-bold text-center mb-20">Skills</h2>
-      <div className="md:w-2/3 mx-auto grid grid-cols-2 gap-2 md:justify-items-center" style={{ listStyleType: "none" }}
-      >
+      <ul className="md:w-2/3 mx-auto grid grid-cols-2 gap-2 md:justify-items-center" style={{ listStyleType: "none" }}>
         {skills.map((skill) => {
           return (
-            <li
-              key={skill.name}
-              className="list-none text-center md:w-1/3 mx-4 my-2 px-4 py-2 bg-newOrange rounded-lg shadow-md text-white"
-            >
+            <li key={skill.name} className="list-none text-center md:w-1/3 mx-4 my-2 px-4 py-2 bg-newOrange rounded-lg shadow-md text-white">
               <img src={skill.logoUrl} alt={skill.name} className="h-12 mx-auto mb-4" />
               <p>{skill.name}</p>
             </li>
           );
         })}
-      </div>
+      </ul>
     </div>
   );
 };

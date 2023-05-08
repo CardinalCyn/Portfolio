@@ -32,9 +32,9 @@ export default [
         projectSkills:["Flask","Python","OpenCV"],
     },
     {
-        projectTitle:"Salah.io",
-        projectUrl:"",
-        projectGithubUrl:"",
+        projectTitle:"Portfolio",
+        projectUrl:"https://github.com/CardinalCyn/Portfolio",
+        projectGithubUrl:"https://github.com/CardinalCyn/Portfolio",
         projectDescription:"This portfolio page!",
         projectImg:"https://res.cloudinary.com/dgax1omc2/image/upload/v1683439099/localhost_3000__yu9qew.png",
         projectSkills:["Next.JS","tailwind"],
