@@ -15,30 +15,43 @@ const Contact=()=>{
         //checks if inputs were valid length, then makes request to send email via sengrid
         const validForm=handleValidation(name,email,message);
         if(validForm){
-            const res = await fetch((process.env.PORTFOLIO_DOMAIN+"/api/sendgrid"), {
-                body: JSON.stringify({
-                  email: email,
-                  name: name,
-                  message: message,
-                }),
-                headers: {
-                  "Content-Type": "application/json",
-                },
-                method: "POST",
-              });
-            const response = await res.json();
-            //if response has an error, sets failureMessage to true, then sets it to false
-            if (response.error) {
+            const urlToFetch=process.env.NEXT_PUBLIC_PORTFOLIO_DOMAIN+"/api/sendgrid"
+            try{
+                const res = await fetch((urlToFetch), {
+                    body: JSON.stringify({
+                    email: email,
+                    name: name,
+                    message: message,
+                    }),
+                    headers: {
+                    "Content-Type": "application/json",
+                    },
+                    method: "POST",
+                });
+                const response = await res.json();
+                //if response has an error, sets failureMessage to true, then sets it to false
+                if (response.error||!response) {
+                    setFailureMessage(true);
+                    setTimeout(()=>{
+                        setFailureMessage(false);
+                    },3000)
+                }else{
+                    setSuccessMessage(true);
+                    setTimeout(()=>{
+                        setSuccessMessage(false)
+                    },3000)
+                }
+            }catch(err){
                 setFailureMessage(true);
                 setTimeout(()=>{
                     setFailureMessage(false);
                 },3000)
-            }else{
-                setSuccessMessage(true);
-                setTimeout(()=>{
-                    setSuccessMessage(false)
-                },3000)
             }
+        }else{
+            setFailureMessage(true);
+                setTimeout(()=>{
+                    setFailureMessage(false);
+                },3000)
         }
     }
     return (
