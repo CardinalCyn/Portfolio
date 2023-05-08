@@ -1,0 +1,42 @@
+export default [
+    {
+        projectTitle:"BubbleTalk",
+        projectUrl:"",
+        projectGithubUrl:"https://github.com/CardinalCyn/BubbleTalk",
+        projectDescription:"Real-time messaging app for instant communication and collaboration between users",
+        projectImg:"https://res.cloudinary.com/dgax1omc2/image/upload/v1683372590/192.168.1.192_3000__udhxtb.png",
+        projectSkills:["React","NodeJS","MySQL","AWS s3","Socket.IO","Express-Session","Tailwind"],
+    },
+    {
+        projectTitle:"Route Tracker",
+        projectUrl:"",
+        projectGithubUrl:"https://github.com/CardinalCyn/GoogleMapsRouteTracker",
+        projectDescription:"Save up to 10 routes, and track the time it takes to reach your destination",
+        projectImg:"https://res.cloudinary.com/dgax1omc2/image/upload/v1683372723/localhost_4200__jv9ohq.png",
+        projectSkills:["Angular","Flask","MongoDB","Directions API","Socket.IO","Tailwind","Express-Session"],
+    },
+    {
+        projectTitle:"Arcdle",
+        projectUrl:"",
+        projectGithubUrl:"https://github.com/CardinalCyn/Arcdle",
+        projectDescription:"Wordle-like for the game Arcanists",
+        projectImg:"https://res.cloudinary.com/dgax1omc2/image/upload/v1683372471/127.0.0.1_5173__aakddw.png",
+        projectSkills:["React","Tailwind"],
+    },
+    {
+        projectTitle:"OctoCam",
+        projectUrl:"https://res.cloudinary.com/dgax1omc2/image/upload/v1683372822/octo_vwjcdi.png",
+        projectGithubUrl:"https://github.com/CardinalCyn/OctoCam",
+        projectDescription:"PyFlaDesk application made to stream and snapshot your webcam for Octoprint",
+        projectImg:"https://res.cloudinary.com/dgax1omc2/image/upload/v1683372822/octo_vwjcdi.png",
+        projectSkills:["Flask","Python","OpenCV"],
+    },
+    {
+        projectTitle:"Salah.io",
+        projectUrl:"",
+        projectGithubUrl:"",
+        projectDescription:"This portfolio page!",
+        projectImg:"https://res.cloudinary.com/dgax1omc2/image/upload/v1683439099/localhost_3000__yu9qew.png",
+        projectSkills:["Next.JS","tailwind"],
+    },
+]
