@@ -1,7 +1,7 @@
 export default [
     {
         projectTitle:"BubbleTalk",
-        projectUrl:"",
+        projectUrl:"https://www.bubbletalk.chat",
         projectGithubUrl:"https://github.com/CardinalCyn/BubbleTalk",
         projectDescription:"Real-time messaging app for instant communication and collaboration between users",
         projectImg:"https://res.cloudinary.com/dgax1omc2/image/upload/v1683372590/192.168.1.192_3000__udhxtb.png",
@@ -9,7 +9,7 @@ export default [
     },
     {
         projectTitle:"Route Tracker",
-        projectUrl:"",
+        projectUrl:"https://www.route-saver.com",
         projectGithubUrl:"https://github.com/CardinalCyn/GoogleMapsRouteTracker",
         projectDescription:"Save up to 10 routes, and track the time it takes to reach your destination",
         projectImg:"https://res.cloudinary.com/dgax1omc2/image/upload/v1683372723/localhost_4200__jv9ohq.png",
@@ -17,7 +17,7 @@ export default [
     },
     {
         projectTitle:"Arcdle",
-        projectUrl:"",
+        projectUrl:"https://www.arcdle.com",
         projectGithubUrl:"https://github.com/CardinalCyn/Arcdle",
         projectDescription:"Wordle-like for the game Arcanists",
         projectImg:"https://res.cloudinary.com/dgax1omc2/image/upload/v1683372471/127.0.0.1_5173__aakddw.png",
@@ -25,7 +25,7 @@ export default [
     },
     {
         projectTitle:"OctoCam",
-        projectUrl:"https://res.cloudinary.com/dgax1omc2/image/upload/v1683372822/octo_vwjcdi.png",
+        projectUrl:"https://github.com/CardinalCyn/OctoCam",
         projectGithubUrl:"https://github.com/CardinalCyn/OctoCam",
         projectDescription:"PyFlaDesk application made to stream and snapshot your webcam for Octoprint",
         projectImg:"https://res.cloudinary.com/dgax1omc2/image/upload/v1683372822/octo_vwjcdi.png",
@@ -33,7 +33,7 @@ export default [
     },
     {
         projectTitle:"Portfolio",
-        projectUrl:"https://github.com/CardinalCyn/Portfolio",
+        projectUrl:"https://salahzanabili.com",
         projectGithubUrl:"https://github.com/CardinalCyn/Portfolio",
         projectDescription:"This portfolio page!",
         projectImg:"https://res.cloudinary.com/dgax1omc2/image/upload/v1683439099/localhost_3000__yu9qew.png",

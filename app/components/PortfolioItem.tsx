@@ -20,6 +20,11 @@ const PortfolioItem = ({ projectTitle, projectUrl, projectDescription, projectIm
           <a href={projectGithubUrl}>
             <img className="h-12 mx-auto rounded-full github-logo" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" />
           </a>
+          <a target="_blank" rel="noopener noreferrer" href={projectUrl}>
+            <span className="bg-newBlue inline-block px-2 py-1 mt-2 font-semibold rounded-md">
+              Live
+            </span>
+          </a>
           <p className="text-lg md:text-xl mb-2 md:mb-3 mt-2">{projectDescription}</p>
           <p className="flex flex-wrap gap-2 flex-row items-center text-xs md:text-sm justify-center mb-4">
               {projectSkills.map((projectSkill) => (
