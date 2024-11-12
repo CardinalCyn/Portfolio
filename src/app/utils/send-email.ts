@@ -13,7 +13,9 @@ export async function sendEmail(data: FormData): Promise<SendEmailResponse> {
     });
 
     if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+      throw new Error(
+        `HTTP error! status: ${response.status}, ${response.json()}`,
+      );
     }
 
     return { status: "successful" };
