@@ -36,9 +36,7 @@ export default function Contact() {
         reset();
       } else {
         setSubmitStatus("error");
-        setErrorMessage(
-          response.message || "An error occurred while sending the message.",
-        );
+        setErrorMessage("An error occurred while sending the message.");
       }
     } catch {
       setSubmitStatus("error");
